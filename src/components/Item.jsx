@@ -22,7 +22,7 @@ const Item = ({name, position, imgSrc, index}) => {
     <div className='item-item'  onClick={()=>{
         //React->Spring 데이터 전송
         console.log("detail 요청");
-        let url='http://localhost:8089/SpringBoot2/PlayerDetail.do?name='+name;
+        let url='http://43.200.171.213:8089/SpringBoot2/PlayerDetail.do?name='+name;
 
         axios.get(url)
         .then((res)=>{
